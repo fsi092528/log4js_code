@@ -4,7 +4,7 @@ const log4js = require('../lib/log4js');
 // log the cheese logger messages to a file, and the console ones as well.
 log4js.configure({
   appenders: {
-    cheeseLogs: { type: 'file', filename: 'cheese.log' },
+    cheeseLogs: { type: 'file', filename: 'cheese.log' },     //更改filename到实际的完整文件路径
     console: { type: 'console' }
   },
   categories: {
